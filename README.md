@@ -366,7 +366,7 @@ python3 flash_can.py -i can0 -u d0548cb2fa73 -f ~/firmware/octopus_1.1_klipper.b
 
 > You should now see the board as an serial usb device
 ```
-ll /dev/serial/by-id
+ls /dev/serial/by-id
 ```
 
 > Flash klipper to the board over serial usb
