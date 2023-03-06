@@ -75,7 +75,7 @@ Set your octopus 1.1 board to DFU. To do that, remove the blue jumper and put it
 ![octopus 1.1 dfu mode](images/octopus_1.1_to_dfu.png)
 Octopus 1.1
 
-![octopus Pro dfu mode](images/octopusPro_board.png)
+![octopus Pro dfu mode](images/OctopusPro_board.png)
 Octopus Pro, put jumper on BOOT0 for DFU
 
 Once done power the board, wait a few second then hit the green/reset button once. The board should boot in DFU mode.
