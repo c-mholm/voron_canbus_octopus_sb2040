@@ -52,14 +52,33 @@ mv ~/CanBoot/out/canboot.bin ~/firmware/octopus_1.1_canboot.bin
 ```
 
 
-### Flashing images
+## Flashing images
 
-#### CanBoot for octopus 1.1
+### Update DFU-util to 0.11 if you have Octopus Pro with STM32F429 processor
+
+If you have the Octopus Pro with STM32F429 processor DFU-util must be updated to v. 0.11 before flashing CanBoot in DFU-mode works. To do so enter the following commands in terminal.
+
+````
+curl -LO http://raspbian.raspberrypi.org/raspbian/pool/main/d/dfu-util/dfu-util_0.11-1+b5_armhf.deb
+
+sudo dpkg -i dfu-util*deb
+````
+
+Now continue with flashing CanBoot for Octopus Pro
+
+
+
+
+### CanBoot for octopus 1.1/Octopus Pro
 
 Set your octopus 1.1 board to DFU. To do that, remove the blue jumper and put it on the purple jumper (blue is power over usb and purple is boot mode).
 ![octopus 1.1 dfu mode](images/octopus_1.1_to_dfu.png)
+Octopus 1.1
 
-Once done power the board, wait a few second then hit the green button once. The board should boot in DFU mode.
+![octopus Pro dfu mode](images/octopusPro_board.png)
+Octopus Pro, put jumper on BOOT0 for DFU
+
+Once done power the board, wait a few second then hit the green/reset button once. The board should boot in DFU mode.
 
 To confirm that you can simple do a `lsusb`
 
