@@ -380,7 +380,7 @@ python3 flash_can.py -i can0 -q
 
 > Trigger the board to restart on canboot bootloader
 ```
-python3 flash_can.py -i can0 -u d0548cb2fa73 -f ~/firmware/octopus_1.1_klipper.bin
+python3 flash_can.py -i can0 -u f4f3bac939bf -f ~/firmware/octopus_1.1_klipper.bin
 ```
 
 > You should now see the board as an serial usb device
